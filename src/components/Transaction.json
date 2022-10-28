@@ -1,0 +1,30 @@
+[{
+    "userId": "01",
+    "date": "26-10-22",
+    "amount": "10000",
+    "accountNumber":"XXXXXXXXX",
+    "destinationAccountNumber" : "YYYYYYYY"
+},
+{
+    "userId": "02",
+    "date": "26-10-22",
+    "amount": "10000",
+    "accountNumber":"XXXXXXXXX",
+    "destinationAccountNumber" : "YYYYYYYY"
+},
+{
+    "userId": "03",
+    "date": "26-10-22",
+    "amount": "10000",
+    "accountNumber":"XXXXXXXXX",
+    "destinationAccountNumber" : "YYYYYYYY"
+},
+{
+    "userId": "04",
+    "date": "26-10-22",
+    "amount": "10000",
+    "accountNumber":"XXXXXXXXX",
+    "destinationAccountNumber" : "YYYYYYYY"
+}
+]
+
