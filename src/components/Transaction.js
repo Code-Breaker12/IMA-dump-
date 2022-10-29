@@ -1,27 +1,58 @@
-import React from 'react';
+import React from "react";
 import Transact from "./Transaction.json";
+import Table from "react-bootstrap/Table";
 
-const Transaction = () => 
-  {
-    
-  
+const Transaction = () => {
   return (
     <div>
-    {<>
-      <ul><li>akanksha</li></ul>
-      <table class="table table-dark table-striped">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-       </table>  
-       </>
-   } </div>
-     )
-  }
+      {
+        <>
+          <p class="h3">Transactions</p>
+
+          <Table striped bordered hover variant="dark">
+            <thead>
+              <tr>
+                <th scope="col">User ID</th>
+                <th scope="col">Date </th>
+                <th scope="col">Amount</th>
+                <th scope="col">Account Number</th>
+                <th scope="col">Destination A/C No</th>
+                <th scope="col">IFSC</th>
+                <th scope="col">Destination IFSC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                {Transact.map((info)=>{
+                 return(
+                <>
+                <td key={info.userId}>{info.userId}</td>
+                <td>{info.date}</td>
+                <td>{info.amount}</td>
+                <td>{info.accountNumber}</td>
+                <td>{info.destinationAccountNumber}</td>
+                <td>{info.ifsc}</td>
+                <td>{info.destinationIfsc}</td>
+                
+                </>
+              )})}
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              
+            </tbody>
+          </Table>
+        </>
+      }
+    </div>
+  );
+};
 
 export default Transaction;
