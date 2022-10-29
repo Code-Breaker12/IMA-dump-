@@ -4,7 +4,7 @@ import Transaction from '../components/Transaction';
 const Transactions = () => {
   return (
     <div>
-      <Transactions/>
+      <Transaction/>
     </div>
   )
   }
