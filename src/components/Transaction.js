@@ -22,10 +22,10 @@ const Transaction = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              
                 {Transact.map((info)=>{
                  return(
-                <>
+                <tr>
                 <td key={info.userId}>{info.userId}</td>
                 <td>{info.date}</td>
                 <td>{info.amount}</td>
@@ -34,9 +34,9 @@ const Transaction = () => {
                 <td>{info.ifsc}</td>
                 <td>{info.destinationIfsc}</td>
                 
-                </>
+                </tr>
               )})}
-              </tr>
+              
               <tr>
                 <td>2</td>
                 <td>Jacob</td>
